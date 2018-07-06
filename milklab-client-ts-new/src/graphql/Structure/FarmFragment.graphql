@@ -1,0 +1,10 @@
+fragment farm on Farm {
+    id
+    name
+    user {
+        id
+    }
+    household {
+        id
+    }
+}

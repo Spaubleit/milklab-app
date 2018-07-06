@@ -1,0 +1,3 @@
+mutation CowRemove($id: ID!) {
+    removeCow(id: $id)
+}

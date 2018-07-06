@@ -1,0 +1,9 @@
+fragment movement on Movement {
+    id
+    date
+    type
+    containers {
+        id
+        number
+    }
+}

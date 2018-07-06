@@ -1,0 +1,11 @@
+query Roles {
+    roles {
+        ...role
+    }
+}
+
+fragment role on Role {
+    id
+    name
+    value
+}

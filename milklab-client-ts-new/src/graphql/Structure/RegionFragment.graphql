@@ -1,0 +1,12 @@
+#import "./DistrictFragment.graphql"
+
+fragment region on Region {
+    id
+    name
+    user {
+        id
+    }
+    districts {
+        ...district
+    }
+}

@@ -1,0 +1,4 @@
+fragment position on Position {
+    id
+    name
+}

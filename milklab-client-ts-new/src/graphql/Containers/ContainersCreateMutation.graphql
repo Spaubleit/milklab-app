@@ -1,0 +1,7 @@
+#import "./ContainerFragment.graphql"
+
+mutation ContainersCreate($count: Int!) {
+    createContainers(count: $count) {
+        ...container
+    }
+}

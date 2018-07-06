@@ -1,0 +1,7 @@
+#import "../FarmFragment.graphql"
+
+mutation FarmCreate($farmInput: FarmInput!) {
+    createFarm(farmInput: $farmInput) {
+        ...farm
+    }
+}

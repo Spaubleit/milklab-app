@@ -1,0 +1,7 @@
+#import "./MovementFragment.graphql"
+
+query Movements {
+    movements {
+        ...movement
+    }
+}

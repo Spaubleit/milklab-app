@@ -1,0 +1,7 @@
+#import "./AnalysisFragment"
+
+mutation AnalysisCreate($analysisInput: AnalysisInput!) {
+    createAnalysis(analysisInput: $analysisInput) {
+        ...analysis
+    }
+}

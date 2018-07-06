@@ -1,0 +1,16 @@
+#import "./FarmFragment.graphql"
+
+fragment household on Household {
+    id
+    name
+    iban
+    user {
+        id
+    }
+    district {
+        id
+    }
+    farms {
+        ...farm
+    }
+}

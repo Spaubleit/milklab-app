@@ -1,0 +1,7 @@
+#import "./CowFragment.graphql"
+
+query Cows($groupId: ID!){
+    cows(groupId: $groupId) {
+        ...cow
+    }
+}

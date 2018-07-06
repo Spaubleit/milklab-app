@@ -1,0 +1,11 @@
+.ContainerItem {
+    display: inline-block;
+    flex-shrink: 1;
+    margin: 5px;
+}
+
+.Main .ContainersList {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}

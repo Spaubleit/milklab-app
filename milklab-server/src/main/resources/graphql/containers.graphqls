@@ -1,0 +1,43 @@
+type Container {
+    id: ID!
+    number: Int
+    state: ContainerState
+    group: Group
+    analyses: [Analysis]
+    movements: [Movement]
+}
+
+input ContainerInput {
+    id: ID!
+    number: Int
+    state: ContainerState
+    groupId: ID
+    analysesId: [ID]
+    movementsId: [ID]
+}
+
+enum ContainerState {
+    STORED
+    SENDED
+    RECIVED
+    LOST
+}
+
+type Movement {
+    id: ID!
+    date: LocalDateTime
+    type: MovementType
+    containers: [Container]
+}
+
+input MovementInput {
+    id: ID!
+    date: LocalDateTime
+    type: MovementType
+    containersId: [ID]
+}
+
+enum MovementType {
+    INCOME
+    OUTCOME
+}

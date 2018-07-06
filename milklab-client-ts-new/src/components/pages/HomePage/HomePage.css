@@ -1,0 +1,7 @@
+.HomePage {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, max-content));
+    flex-grow: 1;
+}

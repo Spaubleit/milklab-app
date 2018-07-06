@@ -1,0 +1,7 @@
+#import "./PositionFragments.graphql"
+
+query Positions {
+    positions {
+        ...position
+    }
+}

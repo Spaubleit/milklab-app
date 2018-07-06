@@ -1,0 +1,7 @@
+#import "./AnalysisFragment.graphql"
+
+query Analyses($containerId: ID!) {
+    analyses(containerId: $containerId) {
+        ...analysis
+    }
+}

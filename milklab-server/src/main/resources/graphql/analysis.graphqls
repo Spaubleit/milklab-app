@@ -1,0 +1,31 @@
+type Analysis {
+    id: ID!
+    fat: Float
+    cells: Float
+    urea: Float
+    lactose: Float
+    solids: Float
+    acidity: Float
+    protein: Float
+    citricAcid: Float
+    conductivity: Float
+    freezingPoint: Float
+    container: Container
+    cow: Cow
+}
+
+input AnalysisInput {
+    id: ID!
+    fat: Float
+    cells: Float
+    urea: Float
+    lactose: Float
+    solids: Float
+    acidity: Float
+    protein: Float
+    citricAcid: Float
+    conductivity: Float
+    freezingPoint: Float
+    containerId: ID!
+    cowId: ID
+}

@@ -1,0 +1,7 @@
+#import "./MovementFragment.graphql"
+
+mutation MovementCreate($movementInput: MovementInput!) {
+    createMovement(movementInput: $movementInput) {
+        ...movement
+    }
+}

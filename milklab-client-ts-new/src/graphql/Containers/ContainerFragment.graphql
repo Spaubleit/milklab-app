@@ -1,0 +1,13 @@
+fragment container on Container {
+    id
+    number
+    state
+    group {
+        id
+        number
+        farm {
+            id
+            name
+        }
+    }
+}

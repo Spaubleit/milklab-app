@@ -1,0 +1,35 @@
+# java.util.Date implementation
+scalar Date
+
+# java.time.LocalDate implementation
+scalar LocalDate
+
+# java.time.LocalDateTime implementation
+scalar LocalDateTime
+
+# java.time.LocalTime implementation
+scalar LocalTime
+
+type Session {
+    id: ID!
+    date: LocalDateTime!
+    time: LocalTime
+    user: User
+}
+
+type SessionByDate {
+#    id: ID!
+    date: LocalDate!
+    sessions: [Session]!
+}
+
+type SessionByUser {
+    user: User!
+    sessions: [Session]!
+}
+
+input SessionInput {
+    id: ID!
+    date: LocalDateTime!
+    userId: ID
+}

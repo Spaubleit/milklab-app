@@ -1,0 +1,60 @@
+type Region {
+    id: ID!
+    name: String!
+    user: User
+    districts: [District]
+}
+
+input RegionInput {
+    id: ID!
+    name: String!
+    userId: ID
+}
+
+type District {
+    id: ID!
+    name: String!
+    user: User
+    region: Region
+    households: [Household]
+}
+
+input DistrictInput {
+    id: ID!
+    name: String!
+    userId: ID
+    regionId: ID!
+}
+
+type Household {
+    id: ID!
+    name: String!
+    user: User
+    iban: String
+    #    bank: Bank
+    district: District
+    farms: [Farm]
+}
+
+input HouseholdInput {
+    id: ID!
+    name: String!
+    userId: ID
+    iban: String
+    districtId: ID!
+}
+
+type Farm {
+    id: ID!
+    name: String!
+    user: User
+    household: Household
+    groups: [Group]
+}
+
+input FarmInput {
+    id: ID!
+    name: String!
+    userId: ID
+    householdId: ID!
+}

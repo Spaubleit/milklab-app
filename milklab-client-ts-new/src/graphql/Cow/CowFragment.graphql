@@ -1,0 +1,8 @@
+fragment cow on Cow{
+    id
+    number
+    nickname
+    group {
+        id
+    }
+}

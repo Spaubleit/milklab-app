@@ -1,0 +1,9 @@
+type AuthData {
+    username: String!
+    password: String!
+}
+
+type SigninPayload {
+    token: String!
+    userId: ID!
+}

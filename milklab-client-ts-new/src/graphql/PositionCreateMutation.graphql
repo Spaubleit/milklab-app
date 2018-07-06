@@ -1,0 +1,6 @@
+mutation PositionCreate($positionInput: PositionInput!) {
+    createPosition(positionInput: $positionInput) {
+        id
+        name
+    }
+}

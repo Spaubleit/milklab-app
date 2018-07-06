@@ -1,0 +1,17 @@
+.UserItem {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+    position: relative;
+}
+
+.pt-tag {
+    margin: 0 1px 0 1px;
+}
+
+.PositionText {
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    font-size: x-small;
+}

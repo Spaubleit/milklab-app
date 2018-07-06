@@ -1,0 +1,7 @@
+#import "../HouseholdFragment.graphql"
+
+mutation HouseholdUpdate($householdInput: HouseholdInput!) {
+    updateHousehold(householdInput: $householdInput) {
+        ...household
+    }
+}

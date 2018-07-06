@@ -1,0 +1,41 @@
+type User {
+    id: ID!
+    username: String
+    firstname: String
+    lastname: String
+    middlename: String
+    email: String
+    enabled: Boolean
+    position: Position
+    roles: [Role]!
+}
+
+input UserInput {
+    id: ID!
+    username: String!
+    firstname: String
+    lastname: String
+    middlename: String
+    password: String
+    email: String
+    enabled: Boolean
+    positionId: ID
+    rolesId: [ID]
+}
+
+type Position {
+    id: ID!
+    name: String
+    users: [User]!
+}
+
+input PositionInput {
+    id: ID!
+    name: String!
+}
+
+type Role {
+    id: ID!
+    name: String
+    value: String
+}

@@ -1,0 +1,7 @@
+#import "./ContainerFragment.graphql"
+
+query Containers($state: ContainerState){
+    containers(state: $state) {
+        ...container
+    }
+}

@@ -1,0 +1,23 @@
+.AppSider {
+    alignment: left;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    padding: 1px;
+}
+
+.AppSider.pt-card {
+    padding: 0;
+}
+
+#UserLogin {
+    z-index: 0;
+}
+
+#Navigator {
+    flex-grow: 1;
+}
+
+.pt-menu {
+    min-width: auto;
+}

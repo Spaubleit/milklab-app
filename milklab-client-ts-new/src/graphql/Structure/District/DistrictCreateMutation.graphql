@@ -1,0 +1,7 @@
+#import "../DistrictFragment.graphql"
+
+mutation DistrictCreate($districtInput: DistrictInput!) {
+    createDistrict(districtInput:$districtInput) {
+        ...district
+    }
+}

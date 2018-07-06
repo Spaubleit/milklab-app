@@ -1,0 +1,7 @@
+#import "./GroupFragment.graphql"
+
+mutation GroupUpdate($groupInput: GroupInput!) {
+    updateGroup(groupInput: $groupInput) {
+        ...group
+    }
+}

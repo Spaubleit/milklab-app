@@ -1,0 +1,15 @@
+#import "./HouseholdFragment.graphql"
+
+fragment district on District {
+    id
+    name
+    user {
+        id
+    }
+    region {
+        id
+    }
+    households {
+        ...household
+    }
+}

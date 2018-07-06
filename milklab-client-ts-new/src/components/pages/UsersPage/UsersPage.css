@@ -1,0 +1,32 @@
+.UsersList {
+    display: grid;
+    width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, max-content));
+}
+
+#UserDialogBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: repeat(auto-fit, max-content);
+    grid-column-gap: 10px;
+}
+
+#PositionSelect {
+    margin-top: 5px;
+}
+
+#RoleSelect {
+    grid-column: 1 / -1;
+}
+
+.pt-dialog-header-title .pt-switch {
+    margin: 0;
+}
+
+.pt-label .pt-input.pt-tag-input {
+    display: flex;
+}

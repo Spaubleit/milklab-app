@@ -1,0 +1,33 @@
+type Cow {
+    id: ID!
+    number: Int,
+    nickname: String
+    group: Group
+    analyses: [Analysis]
+}
+
+input CowInput {
+    id: ID!
+    number: Int
+    nickname: String
+    groupId: ID!
+    analysesId: [ID]
+}
+
+type Group {
+    id: ID!
+    number: Int
+    user: User
+    farm: Farm
+    cows: [Cow]
+    containers: [Container]
+}
+
+input GroupInput {
+    id: ID!
+    number: Int
+    userId: ID
+    farmId: ID!
+    cowsId: [ID]
+    containersId: [ID]
+}

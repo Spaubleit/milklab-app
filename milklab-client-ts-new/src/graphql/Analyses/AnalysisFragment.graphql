@@ -1,0 +1,19 @@
+fragment analysis on Analysis {
+    id
+    fat
+    cells
+    urea
+    lactose
+    solids
+    acidity
+    protein
+    citricAcid
+    conductivity
+    freezingPoint
+    container {
+        id
+    }
+    cow {
+        id
+    }
+}

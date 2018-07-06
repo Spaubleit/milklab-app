@@ -1,0 +1,22 @@
+query SessionsByDate{
+    sessionsByDate {
+        ...sessionByDate
+    }
+}
+
+fragment sessionByDate on SessionByDate {
+    date
+    sessions {
+        ...session
+    }
+}
+
+fragment session on Session {
+    id
+    date
+    time
+    user {
+        id
+        username
+    }
+}

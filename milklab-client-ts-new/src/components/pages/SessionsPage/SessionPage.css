@@ -1,0 +1,19 @@
+.SessionGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.SessionItem {
+    position: relative;
+    margin: 5px;
+}
+
+.SessionGroup .SessionItem {
+    padding: 10px;
+}
+
+.SessionRemoveButton {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}

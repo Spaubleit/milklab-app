@@ -1,0 +1,14 @@
+query Farms {
+    farms {
+        ...farmListItem
+    }
+}
+
+fragment farmListItem on Farm {
+    id
+    name
+    household {
+        id
+        name
+    }
+}

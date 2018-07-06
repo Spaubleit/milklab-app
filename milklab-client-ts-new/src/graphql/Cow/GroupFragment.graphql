@@ -1,0 +1,29 @@
+fragment group on Group {
+    id
+    number
+    farm {
+        id
+    }
+    user {
+        ...groupUser
+    }
+}
+
+fragment groupUser on User {
+    id
+    username
+    firstname
+    lastname
+    middlename
+    email
+    enabled
+    position {
+        id
+        name
+    }
+    roles {
+        id
+        name,
+        value
+    }
+}

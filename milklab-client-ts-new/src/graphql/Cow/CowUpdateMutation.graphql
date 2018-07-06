@@ -1,0 +1,7 @@
+#import "./CowFragment.graphql"
+
+mutation CowUpdate($cowInput: CowInput!) {
+    updateCow(cowInput: $cowInput) {
+        ...cow
+    }
+}

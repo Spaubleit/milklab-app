@@ -1,0 +1,7 @@
+#import "./PositionFragments.graphql"
+
+mutation PositionUpdate($positionInput: PositionInput!) {
+    updatePosition(positionInput: $positionInput) {
+        ...position
+    }
+}

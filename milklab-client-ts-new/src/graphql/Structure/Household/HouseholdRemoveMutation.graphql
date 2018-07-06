@@ -1,0 +1,3 @@
+mutation HouseholdRemove($id: ID!) {
+    removeHousehold(id: $id)
+}

@@ -1,0 +1,7 @@
+#import "./ContainerFragment.graphql"
+
+mutation ContainerUpdate($containerInput: ContainerInput!) {
+    updateContainer(containerInput: $containerInput) {
+        ...container
+    }
+}

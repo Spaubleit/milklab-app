@@ -1,0 +1,68 @@
+type Query {
+    users: [User]!
+    userById(userId: ID!): User
+    roles: [Role]!
+    positions: [Position]!
+    analyses(containerId: ID!): [Analysis]!
+    containers(state: ContainerState): [Container]!
+    containerById(containerId: ID!): Container
+    regions: [Region]!
+    farms: [Farm]!
+    groups(farmId: ID!): [Group]!
+    cows(groupId: ID!): [Cow]!
+    movements: [Movement]!
+    sessionsByDate: [SessionByDate]!
+#    sessionsByUser: [SessionByUser]!
+
+    test: LocalDateTime!
+}
+
+type Mutation {
+    createUser(userInput: UserInput!): User
+    updateUser(userInput: UserInput!): User
+    removeUser(id: ID!): ID
+
+    createPosition(positionInput: PositionInput!): Position
+    updatePosition(positionInput: PositionInput!): Position
+    removePosition(id: ID!): ID
+
+    createRegion(regionInput: RegionInput!): Region
+    updateRegion(regionInput: RegionInput!): Region
+    removeRegion(id: ID!): ID
+
+    createDistrict(districtInput: DistrictInput!): District
+    updateDistrict(districtInput: DistrictInput!): District
+    removeDistrict(id: ID!): ID
+
+    createHousehold(householdInput: HouseholdInput!): Household
+    updateHousehold(householdInput: HouseholdInput!): Household
+    removeHousehold(id: ID!): ID
+
+    createFarm(farmInput: FarmInput!): Farm
+    updateFarm(farmInput: FarmInput!): Farm
+    removeFarm(id: ID!): ID
+
+    createGroup(groupInput: GroupInput!): Group
+    updateGroup(groupInput: GroupInput!): Group
+    removeGroup(id: ID!): ID
+
+    createCow(cowInput: CowInput!): Cow
+    updateCow(cowInput: CowInput!): Cow
+    removeCow(id: ID!): ID
+
+    createMovement(movementInput: MovementInput!): Movement
+    updateMovement(movementInput: MovementInput!): Movement
+    removeMovement(id: ID!): ID
+
+    createAnalysis(analysisInput: AnalysisInput!): Analysis
+    updateAnalysis(analysisInput: AnalysisInput!): Analysis
+    removeAnalysis(id: ID!): ID
+
+    createContainers(count: Int): [Container]
+    createContainer(containerInput: ContainerInput!): Container
+    updateContainer(containerInput: ContainerInput!): Container
+    removeContainer(id: ID!): ID
+
+    removeSession(id: ID!): ID
+    createSession(sessionInput: SessionInput!): Session
+}

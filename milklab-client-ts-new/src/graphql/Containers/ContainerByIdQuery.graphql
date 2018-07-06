@@ -1,0 +1,7 @@
+#import "./ContainerFragment.graphql"
+
+query ContainerById($containerId: ID!) {
+    containerById(containerId: $containerId) {
+        ...container
+    }
+}

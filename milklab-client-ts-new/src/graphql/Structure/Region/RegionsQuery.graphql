@@ -1,0 +1,8 @@
+#import "../RegionFragment.graphql"
+
+query Regions{
+    regions {
+        ...region
+    }
+}
+
